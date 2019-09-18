@@ -1,11 +1,15 @@
+body {
+  font-family: Roboto;
+}
+
 * {
   margin: 0;
   padding: 0;
 }
+
 header {
   white-space: nowrap;
   text-align: left;
-  font-family: Helvetica Neue;
   font-size: 25px;
   color: rgba(255, 255, 255, 1);
   background-color: rgba(224, 36, 51, 1);
@@ -93,11 +97,16 @@ section .right {
     grid-row: 1;
 }
 
-@media (max-width:419px) { 
+/* @media (min-width: 420px) {
+  section h1 {
+    font-size: 36px;
+  }
+} */
+
+@media (max-width: 419px) { 
   section .right {
     grid-column: 1;
-    grid-row: 2;
-    
+    grid-row: 2; 
   }
 
   section .right img {
