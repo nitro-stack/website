@@ -46,11 +46,11 @@ main {
   border-top: 1px solid #eaecef;
 }
 
-main,
+/* main,
 iframe {
 	min-height: 1000px;
 	width: 100%;
-}
+} */
 
 section {
   display: flex;
@@ -78,6 +78,7 @@ section h1 {
   0% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(0.9);
   }
@@ -87,6 +88,7 @@ section {
   display: grid;
   grid-auto-columns: 50% 50%;
 }
+
 section .left {
   grid-column: 1;
   grid-row: 1;
@@ -95,14 +97,14 @@ section .left {
 }
 
 section .right {
-    grid-column: 2;
-    grid-row: 1;
+  grid-column: 2;
+  grid-row: 1;
 }
 
-@media (max-width:949px) { 
+@media (max-width:949px) {
   section .right {
     grid-column: 1;
-    grid-row: 2; 
+    grid-row: 2;
   }
 
   section .left {
