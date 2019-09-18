@@ -64,7 +64,7 @@ section img {
 section h1 {
   overflow: visible;
   font-style: normal;
-  font-size: 90px;
+  font-size: 8vw;
   color: rgba(0, 0, 0, 1);
   font-family: Helvetica Neue;
 }
@@ -75,5 +75,34 @@ section h1 {
   }
   50% {
     transform: scale(0.9);
+  }
+}
+
+section {
+  display: grid;
+  grid-auto-columns: 50% 50%;
+}
+section .left {
+  grid-column: 1;
+  grid-row: 1;
+  flex-wrap: wrap;
+}
+
+section .right {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+@media (max-width:419px) { 
+  section .right {
+    grid-column: 1;
+    grid-row: 2;
+    
+  }
+
+  section .right img {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 35px;
   }
 }
