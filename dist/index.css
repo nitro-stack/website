@@ -1,5 +1,5 @@
 body {
-  font-family: Roboto;
+  font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 * {
@@ -10,10 +10,6 @@ body {
 header {
   white-space: nowrap;
   text-align: left;
-<<<<<<< HEAD
-=======
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
->>>>>>> 27d14305420c143741762beacb81138b318f80c3
   font-size: 25px;
   color: rgba(255, 255, 255, 1);
   background-color: rgba(224, 36, 51, 1);
@@ -59,6 +55,7 @@ iframe {
 section {
   display: flex;
   align-items: center;
+  text-align: center;
   width: 100%;
   justify-content: center;
   padding: 100px 0;
@@ -73,8 +70,8 @@ section h1 {
   overflow: visible;
   font-style: normal;
   font-size: 8vw;
+  text-align: left;
   color: rgba(0, 0, 0, 1);
-  font-family: Helvetica Neue, Helvetica, Arial sans-serif;
 }
 
 @keyframes beat {
