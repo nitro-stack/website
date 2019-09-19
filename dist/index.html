@@ -1,92 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Nitro Stack 🚀</title>
-    <link rel="shortcut icon" href="/favicon.png" type="image/png" />
-    <link rel="icon" href="/favicon.png" type="image/png" />
-    <link rel="canonical" href="https://nitro-stack.azureedge.net/" />
-    <meta
-      name="description"
-      content="Introducing Nitro: Supercharge Your Web Applications with Serverless."
-    />
-    <meta name="keywords" content="cloud,serverless,web,angular,nestjs" />
 
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://nitro-stack.azureedge.net/" />
-    <meta property="og:title" content="Nitro Stack" />
-    <meta property="og:image" content="https://nitro-stack.azureedge.net/nitro_logo.png" />
-    <meta
-      property="og:description"
-      content="Introducing Nitro: Supercharge Your Web Applications with Serverless."
-    />
-    <meta property="og:site_name" content="Nitro Stack" />
-    <meta
-      name="twitter:description"
-      content="Introducing Nitro: Supercharge Your Web Applications with Serverless."
-    />
-    <meta name="twitter:image:src" content="https://nitro-stack.azureedge.net/nitro_logo.png" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
-    <link rel="stylesheet" type="text/css" href="index.css" />
-    <link rel="stylesheet" type="text/css" href="tutorial.css" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <header>
-      <img src="nitro_logo_white.png" alt="nitro logo" />
-      <span>NITRO<i>alpha</i></span>
-      <a href="https://github.com/nitro-stack/website/" rel="noopener">
-          <img src="github.png" alt="github logo">
-      </a>
-    </header>
+<head>
+  <meta charset="utf-8" />
+  <title>Nitro Stack 🚀</title>
+  <link rel="shortcut icon" href="/favicon.png" type="image/png" />
+  <link rel="icon" href="/favicon.png" type="image/png" />
+  <link rel="canonical" href="https://nitro-stack.azureedge.net/" />
+  <meta name="description" content="Introducing Nitro: Supercharge Your Web Applications with Serverless." />
+  <meta name="keywords" content="cloud,serverless,web,angular,nestjs" />
 
-    <section>
-      <div class="left">
-        <h1>
-          Supercharge. Build. Deploy.
-        </h1>
-      </div>
-      <div class="right">
-        <img src="nitro_logo.png" alt="nitro logo" />
-      </div>
-    </section>
-    <main class="page">
-      <div class="theme-default-content content__default">
-        <h1 id="getting-started"><a href="#getting-started" aria-hidden="true" class="header-anchor">#</a> Getting Started</h1>
-        <p>What are the steps?</p>
-        <p>Scaffold a NestJS app</p>
-        <p>Generate something that adds a module to the NestJS app</p>
-        <ul>
-          <li>Install Nest.js CLI</li>
-          <li>Generate an app</li>
-          <li>Add Azure module</li>
-        </ul>
-        <h2 id="install-cli"><a href="#install-cli" aria-hidden="true" class="header-anchor">#</a> Install CLI</h2>
-        <p>To install the Nest.js CLI type</p>
-        <div class="language- extra-class">
-          <pre class="language-text"><code>npm i -g @nestjs/cli
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://nitro-stack.azureedge.net/" />
+  <meta property="og:title" content="Nitro Stack" />
+  <meta property="og:image" content="https://nitro-stack.azureedge.net/nitro_logo.png" />
+  <meta property="og:description" content="Introducing Nitro: Supercharge Your Web Applications with Serverless." />
+  <meta property="og:site_name" content="Nitro Stack" />
+  <meta name="twitter:description" content="Introducing Nitro: Supercharge Your Web Applications with Serverless." />
+  <meta name="twitter:image:src" content="https://nitro-stack.azureedge.net/nitro_logo.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <link rel="stylesheet" type="text/css" href="index.css" />
+  <link rel="stylesheet" type="text/css" href="tutorial.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <img src="nitro_logo_white.png" alt="nitro logo" />
+    <span>NITRO<i>alpha</i></span>
+    <a href="https://github.com/nitro-stack/website/" rel="noopener">
+      <img src="github.png" alt="github logo">
+    </a>
+  </header>
+
+  <section>
+    <div class="left">
+      <h1>
+        Supercharge. Build. Deploy.
+      </h1>
+    </div>
+    <div class="right">
+      <img src="nitro_logo.png" alt="nitro logo" />
+    </div>
+  </section>
+  <main class="page">
+    <div class="theme-default-content content__default">
+
+      <style>
+        .embed-container {
+          position: relative;
+          padding-bottom: 56.25%;
+          height: 0;
+          overflow: hidden;
+          max-width: 100%;
+        }
+
+        .embed-container iframe,
+        .embed-container object,
+        .embed-container embed {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+      </style>
+      <div class='embed-container'><iframe src='https://www.youtube.com/embed/W6qMP-qXCLI' frameborder='0'
+          allowfullscreen></iframe></div>
+
+
+      <h2 id="introduction"><a href="#introduction" aria-hidden="true" class="header-anchor">#</a> Introduction
+      </h2>
+      <p>Nitro is a collection of tools, libraries and best practices for building and deploying
+        <strong>Serverless</strong>
+        backends for your application powered by NestJS and Azure.</p>
+      <ul>
+        <li>😍 Based on the NestJS Framework</li>
+        <li>🔋 Batteries Included [DB, FileUpload]</li>
+        <li>⚡️ Deploy as a Serverless app</li>
+        <li>📈 Automatic scaling</li>
+        <li>💰 Pay only for what you use</li>
+      </ul>
+
+      <h2 id="links"><a href="#links" aria-hidden="true" class="header-anchor">#</a> Links
+      </h2>
+
+      <ul>
+        <li><a href="https://trilon.io/blog/deploy-nestjs-azure-functions">How to deploy a NestJS application on Azure
+            Serverless Functions?</a></li>
+        <li><a href="https://trilon.io/blog/nestjs-nosql-azure-table-storage">How to add Azure Serverless NoSQL Database
+            support to NestJS?</a></li>
+        <li>View the Nitro-Cats Demo project on <a href="https://github.com/nitro-stack/nitro-cats">GitHub</a></a></li>
+      </ul>
+
+      <!--
+      <p>
+        
+      </p>
+      <h2 id="install-cli"><a href="#install-cli" aria-hidden="true" class="header-anchor">#</a> Install NestJS</h2>
+      <p>To install the Nest.js CLI type</p>
+      <div class="language- extra-class">
+        <pre class="language-text"><code>npm i -g @nestjs/cli
 </code></pre>
-        </div>
-        <h2 id="generate-an-app"><a href="#generate-an-app" aria-hidden="true" class="header-anchor">#</a> Generate an
-          app</h2>
-        <p>To generate an app we just type</p>
-        <div class="language- extra-class">
-          <pre class="language-text"><code>nest new hello-world
+      </div>
+      <h2 id="generate-an-app"><a href="#generate-an-app" aria-hidden="true" class="header-anchor">#</a> Generate an
+        app</h2>
+      <p>To generate an app we just type</p>
+      <div class="language- extra-class">
+        <pre class="language-text"><code>nest new hello-world
 cd hello-world
 </code></pre>
-        </div>
-        <p>Turns Nest.js app into Azure Function app</p>
-        <div class="language- extra-class">
-          <pre class="language-text"><code>nest add @nestjs/azure-func-http
+      </div>
+      <p>Turns Nest.js app into Azure Function app</p>
+      <div class="language- extra-class">
+        <pre class="language-text"><code>nest add @nestjs/azure-func-http
 </code></pre>
-        </div>
-        <p>This should give you an output like the following:</p>
-        <div class="language- extra-class">
-          <pre class="language-text"><code>✔ Installation in progress... ☕
+      </div>
+      <p>This should give you an output like the following:</p>
+      <div class="language- extra-class">
+        <pre class="language-text"><code>✔ Installation in progress... ☕
 CREATE /.funcignore (66 bytes)
 CREATE /host.json (23 bytes)
 CREATE /local.settings.json (116 bytes)
@@ -97,109 +130,111 @@ CREATE /main/sample.dat (23 bytes)
 CREATE /src/main.azure.ts (321 bytes)
 UPDATE /package.json (1827 bytes)
 </code></pre>
-        </div>
-        <p>Your project has now turned into an Azure functions app</p>
-        <p>Ensure you have the following installed:</p>
-        <ul>
-          <li>Azure Core Tools, <a href="https://github.com/Azure/azure-functions-core-tools#installing" target="_blank"
-              rel="noopener noreferrer">https://github.com/Azure/azure-functions-core-tools#installing<svg
-                xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15"
-                height="15" class="icon outbound">
-                <path fill="currentColor"
-                  d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z">
-                </path>
-                <polygon fill="currentColor"
-                  points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9">
-                </polygon>
-              </svg></a></li>
-          <li>Azure Functions extension for VS Code, <a
-              href="vscode:extension/ms-azuretools.vscode-azurefunctions">vscode:extension/ms-azuretools.vscode-azurefunctions</a>
-          </li>
-        </ul>
-        <p>Now in VS Code locate the Azure tool icon to the left, and sign into Azure</p>
-        <p><img src="https://code.visualstudio.com/assets/tutorials/functions-extension/sign-in.png" alt=""></p>
-        <p>Next click the blue arrow icon to deploy</p>
-        <p><img
-            src="https://code.visualstudio.com/assets/tutorials/functions-extension/function-app-publish-project.png"
-            alt=""></p>
-        <p>From here follow the prompts. Choose the directory that you currently have open, select your Azure
-          subscription, and then choose <strong>Create New Function App</strong>.</p>
-        <ol>
-          <li>Type a globally unique name for your Function App and press Enter. Valid characters for a function app
-            name are 'a-z', '0-9', and '-'.</li>
-          <li>Choose <strong>Create New Resource Group</strong>, type a Resource Group name, like 'myResourceGroup' and
-            press Enter.</li>
-          <li>Choose a location in a <a href="https://azure.microsoft.com/en-us/regions/" target="_blank"
-              rel="noopener noreferrer">region<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px"
-                viewBox="0 0 100 100" width="15" height="15" class="icon outbound">
-                <path fill="currentColor"
-                  d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z">
-                </path>
-                <polygon fill="currentColor"
-                  points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9">
-                </polygon>
-              </svg></a> near you or near other services you may need to access.</li>
-          <li>Choose <strong>Create New Storage Account</strong>, type a globally unique name of the new storage account
-            used by your function app and press Enter. Storage account names must be between 3 and 24 characters in
-            length and may contain numbers and lowercase letters only.</li>
-        </ol>
-        <p>It should look something like this when it's done deploying</p>
-        <p><img src="https://code.visualstudio.com/assets/tutorials/functions-extension/function-create-output.png"
-            alt=""></p>
-        <h1 id="deploy-an-angular-app"><a href="#deploy-an-angular-app" aria-hidden="true" class="header-anchor">#</a>
-          Deploy an Angular app</h1>
-        <p>Scaffold an app</p>
-        <div class="language- extra-class">
-          <pre class="language-text"><code>ng new MyApp
+      </div>
+      <p>Your project has now turned into an Azure functions app</p>
+      <p>Ensure you have the following installed:</p>
+      <ul>
+        <li>Azure Core Tools, <a href="https://github.com/Azure/azure-functions-core-tools#installing" target="_blank"
+            rel="noopener noreferrer">https://github.com/Azure/azure-functions-core-tools#installing<svg
+              xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15"
+              height="15" class="icon outbound">
+              <path fill="currentColor"
+                d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z">
+              </path>
+              <polygon fill="currentColor"
+                points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9">
+              </polygon>
+            </svg></a></li>
+        <li>Azure Functions extension for VS Code, <a
+            href="vscode:extension/ms-azuretools.vscode-azurefunctions">vscode:extension/ms-azuretools.vscode-azurefunctions</a>
+        </li>
+      </ul>
+      <p>Now in VS Code locate the Azure tool icon to the left, and sign into Azure</p>
+      <p><img src="https://code.visualstudio.com/assets/tutorials/functions-extension/sign-in.png" alt=""></p>
+      <p>Next click the blue arrow icon to deploy</p>
+      <p><img src="https://code.visualstudio.com/assets/tutorials/functions-extension/function-app-publish-project.png"
+          alt=""></p>
+      <p>From here follow the prompts. Choose the directory that you currently have open, select your Azure
+        subscription, and then choose <strong>Create New Function App</strong>.</p>
+      <ol>
+        <li>Type a globally unique name for your Function App and press Enter. Valid characters for a function app
+          name are 'a-z', '0-9', and '-'.</li>
+        <li>Choose <strong>Create New Resource Group</strong>, type a Resource Group name, like 'myResourceGroup' and
+          press Enter.</li>
+        <li>Choose a location in a <a href="https://azure.microsoft.com/en-us/regions/" target="_blank"
+            rel="noopener noreferrer">region<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px"
+              viewBox="0 0 100 100" width="15" height="15" class="icon outbound">
+              <path fill="currentColor"
+                d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z">
+              </path>
+              <polygon fill="currentColor"
+                points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9">
+              </polygon>
+            </svg></a> near you or near other services you may need to access.</li>
+        <li>Choose <strong>Create New Storage Account</strong>, type a globally unique name of the new storage account
+          used by your function app and press Enter. Storage account names must be between 3 and 24 characters in
+          length and may contain numbers and lowercase letters only.</li>
+      </ol>
+      <p>It should look something like this when it's done deploying</p>
+      <p><img src="https://code.visualstudio.com/assets/tutorials/functions-extension/function-create-output.png"
+          alt=""></p>
+      <h1 id="deploy-an-angular-app"><a href="#deploy-an-angular-app" aria-hidden="true" class="header-anchor">#</a>
+        Deploy an Angular app</h1>
+      <p>Scaffold an app</p>
+      <div class="language- extra-class">
+        <pre class="language-text"><code>ng new MyApp
 cd Myapp
 </code></pre>
-        </div>
-        <p><code>MyApp</code> can be whatever name you choose</p>
-        <p>Upgrade to Angular 8+ if needed</p>
-        <div class="language- extra-class">
-          <pre class="language-text"><code>ng update @angular/cli @angular/core
-</code></pre>
-        </div>
-        <h2 id="ng-deploy"><a href="#ng-deploy" aria-hidden="true" class="header-anchor">#</a> Ng-deploy</h2>
-        <p>There are two steps here</p>
-        <ol>
-          <li><strong>Generate</strong> config file</li>
-          <li><strong>Deploy</strong> to Azure</li>
-        </ol>
-        <h3 id="generate-config-file"><a href="#generate-config-file" aria-hidden="true" class="header-anchor">#</a>
-          Generate config file</h3>
-        <p>Pre step, run the following command</p>
-        <div class="language- extra-class">
-          <pre class="language-text"><code>ng add @azure/ng-deploy
-</code></pre>
-        </div>
-        <p>This will install <code>@azure/ng-deploy</code> from NPM</p>
-        <ol>
-          <li>it will prompt you to log in (unless you are already logged into Azure via the terminal)</li>
-          <li>it will bring up a dialog where you are asked to <em>select</em> a subscription (if you have more than
-            one).</li>
-        </ol>
-        <p>Then it will create the needed resources at Azure, ending with the creation of an <code>azure.json</code> file that
-          contains all the required config</p>
-        <h3 id="deploy-to-azure"><a href="#deploy-to-azure" aria-hidden="true" class="header-anchor">#</a> Deploy to
-          Azure</h3>
-        <p>Just type the following command:</p>
-        <div class="language- extra-class">
-          <pre class="language-text"><code>ng deploy
-</code></pre>
-        </div>
-        <p>This will do the following:</p>
-        <ol>
-          <li><strong>Compile</strong> the Angular project if the <code>dist</code> folder is empty</li>
-          <li><strong>Upload</strong> files to Azure using the config found in <code>azure.json</code></li>
-        </ol>
-        <p>The step will finish with the <em>public URL</em> being displayed</p>
       </div>
+      <p><code>MyApp</code> can be whatever name you choose</p>
+      <p>Upgrade to Angular 8+ if needed</p>
+      <div class="language- extra-class">
+        <pre class="language-text"><code>ng update @angular/cli @angular/core
+</code></pre>
+      </div>
+      <h2 id="ng-deploy"><a href="#ng-deploy" aria-hidden="true" class="header-anchor">#</a> Ng-deploy</h2>
+      <p>There are two steps here</p>
+      <ol>
+        <li><strong>Generate</strong> config file</li>
+        <li><strong>Deploy</strong> to Azure</li>
+      </ol>
+      <h3 id="generate-config-file"><a href="#generate-config-file" aria-hidden="true" class="header-anchor">#</a>
+        Generate config file</h3>
+      <p>Pre step, run the following command</p>
+      <div class="language- extra-class">
+        <pre class="language-text"><code>ng add @azure/ng-deploy
+</code></pre>
+      </div>
+      <p>This will install <code>@azure/ng-deploy</code> from NPM</p>
+      <ol>
+        <li>it will prompt you to log in (unless you are already logged into Azure via the terminal)</li>
+        <li>it will bring up a dialog where you are asked to <em>select</em> a subscription (if you have more than
+          one).</li>
+      </ol>
+      <p>Then it will create the needed resources at Azure, ending with the creation of an <code>azure.json</code> file
+        that
+        contains all the required config</p>
+      <h3 id="deploy-to-azure"><a href="#deploy-to-azure" aria-hidden="true" class="header-anchor">#</a> Deploy to
+        Azure</h3>
+      <p>Just type the following command:</p>
+      <div class="language- extra-class">
+        <pre class="language-text"><code>ng deploy
+</code></pre>
+      </div>
+      <p>This will do the following:</p>
+      <ol>
+        <li><strong>Compile</strong> the Angular project if the <code>dist</code> folder is empty</li>
+        <li><strong>Upload</strong> files to Azure using the config found in <code>azure.json</code></li>
+      </ol>
+      <p>The step will finish with the <em>public URL</em> being displayed</p>
+    </div>
+    -->
       <footer class="page-edit">
         <!---->
         <!---->
       </footer>
       <!---->
-    </main>
-  </body>
+  </main>
+</body>
+
 </html>
