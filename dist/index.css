@@ -7,7 +7,8 @@ body {
   padding: 0;
 }
 
-header {
+header,
+footer {
   white-space: nowrap;
   text-align: left;
   font-size: 25px;
@@ -19,14 +20,47 @@ header {
   border-bottom: 1px solid #dadbdc;
 }
 
+footer {
+  display: flex;
+  font-size: 1em;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+header a,
+footer a,
+section.notice-section.alternate a {
+  color: white;
+}
+
+header a {
+  text-decoration: none;
+}
+
+section.notice-section {
+  background-color: white;
+}
+
+section.notice-section.alternate {
+  white-space: nowrap;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(224, 36, 51, 1);
+}
+
+section.notice-section p,
+section.notice-section h2 {
+  margin: 10px;
+  text-align: left;
+}
 header img {
-  margin: 5px 10px 5px 20px;
+  margin: 0px 10px -4px 20px;
   height: 30px;
   display: inline-block;
 }
 
-header span {
-  flex: 1
+header a:first-child {
+  flex: 1;
 }
 
 header span i {
@@ -38,19 +72,13 @@ header span i {
   left: 4px;
   background: white;
   border-radius: 2px;
-  color: #DF2837;
+  color: #df2837;
   padding: 2px;
 }
 
 main {
   border-top: 1px solid #eaecef;
 }
-
-/* main,
-iframe {
-	min-height: 1000px;
-	width: 100%;
-} */
 
 section {
   display: flex;
@@ -101,7 +129,7 @@ section .right {
   grid-row: 1;
 }
 
-@media (max-width:949px) {
+@media (max-width: 949px) {
   section .right {
     grid-column: 1;
     grid-row: 2;
