@@ -31,7 +31,7 @@
         <img src="nitro_logo_white.png" alt="nitro logo" />
       <span>NITRO<i>alpha</i></span>
     </a>
-    <a href="https://github.com/nitro-stack/website/" rel="noopener">
+    <a href="https://github.com/nitro-stack/website/" rel="noopener" title="Contribute">
       <img src="github.png" alt="github logo">
     </a>
   </header>
@@ -44,6 +44,9 @@
     </div>
     <div class="right">
       <img src="nitro_logo.png" alt="nitro logo" />
+    </div>
+    <div class="action-bar">
+      <a href="#get-started" aria-hidden="true" class="button">Get Started</a>
     </div>
   </section>
   <main class="page">
@@ -68,12 +71,11 @@
           height: 100%;
         }
       </style>
-      <div class='embed-container'><iframe src='https://www.youtube.com/embed/W6qMP-qXCLI' frameborder='0'
-          allowfullscreen></iframe></div>
+      <div class='embed-container'><iframe src='https://www.youtube.com/embed/W6qMP-qXCLI' frameborder='0' allowfullscreen></iframe></div>
 
 
-      <h2 id="introduction"><a href="#introduction" aria-hidden="true" class="header-anchor">#</a> Introduction
-      </h2>
+      <h2 id="introduction"><a href="#introduction" aria-hidden="true" class="header-anchor">#</a>Introduction</h2>
+
       <p>Nitro is a collection of tools, libraries and best practices for building and deploying
         <strong>Serverless</strong>
         backends for your application powered by NestJS and Azure.</p>
@@ -85,8 +87,34 @@
         <li>💰 Pay only for what you use</li>
       </ul>
 
-      <h2 id="links"><a href="#links" aria-hidden="true" class="header-anchor">#</a> Links
-      </h2>
+      <h2 id="get-started"><a href="#get-started" aria-hidden="true" class="header-anchor">#</a>Get Started</h2>
+
+
+      <p>
+        To get started with the Nitro Stack, you need to install the following packages:
+        <pre><code>npm install --global @nestjs/cli</code></pre>
+        And the Hexa CLI (<a href="https://hexa.run">read more about Hexa</a>):
+        <pre><code>npm install --global @manekinekko/hexa</code></pre>
+      </p>
+
+      <h2 id="serverless"><a href="#serverless" aria-hidden="true" class="header-anchor">#</a>Deploy as a Serverless app</h2>
+
+      <p>
+          In order to deploy the NestJS application to Azure Function, add the <code>@nestjs/azure-func-http</code> schematic:
+          <pre><code>nest add @nestjs/azure-func-http</code></pre>
+        </p>
+  
+        <p>
+          Next, use the Hexa CLI to setup and configure an Azure Functions project:
+          <pre><code>hexa init --just functions</code></pre>
+        </p>
+        
+        <p>
+          Finally, watch Hexa deploy your Nest application to Azure Functions!
+          <pre><code>hexa deploy</code></pre>
+        </p>
+  
+      <h2 id="links"><a href="#links" aria-hidden="true" class="header-anchor">#</a>Links</h2>
 
       <ul>
         <li><a href="https://trilon.io/blog/deploy-nestjs-azure-functions">How to deploy a NestJS application on Azure
@@ -95,6 +123,10 @@
             support to NestJS?</a></li>
         <li>View the Nitro-Cats Demo project on <a href="https://github.com/nitro-stack/nitro-cats">GitHub</a></a></li>
       </ul>
+
+      <div class="action-bar">
+          <a href="https://github.com/nitro-stack/" aria-hidden="true" class="button small">Contribute</a>
+      </div>
 
     </main>
     <footer>
