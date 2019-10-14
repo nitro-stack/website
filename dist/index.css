@@ -1,5 +1,7 @@
 body {
   font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
+  --primary-color: #3E72BA;
+  --primary-color-dark: #265CA3;
 }
 
 * {
@@ -13,7 +15,7 @@ footer {
   text-align: left;
   font-size: 25px;
   color: rgba(255, 255, 255, 1);
-  background-color: rgba(224, 36, 51, 1);
+  background-color: var(--primary-color);
   display: flex;
   align-items: center;
   height: 60px;
@@ -22,7 +24,7 @@ footer {
 
 footer {
   display: flex;
-  font-size: 1em;
+  font-size: 0.8em;
   justify-content: space-between;
   padding: 0 10px;
 }
@@ -45,7 +47,7 @@ section.notice-section.alternate {
   white-space: nowrap;
   text-align: left;
   color: rgba(255, 255, 255, 1);
-  background-color: rgba(224, 36, 51, 1);
+  background-color: var(--primary-color);;
 }
 
 section.notice-section p,
@@ -72,7 +74,7 @@ header span i {
   left: 4px;
   background: white;
   border-radius: 2px;
-  color: #df2837;
+  color: var(--primary-color);;
   padding: 2px;
 }
 
@@ -92,6 +94,7 @@ section {
 section img {
   margin-left: 100px;
   animation: beat 1s infinite alternate;
+  width: 340px;
 }
 
 section h1 {
@@ -129,6 +132,28 @@ section .right {
   grid-row: 1;
 }
 
+.action-bar {
+  margin: 30px 0px 30px 35px;
+  text-align: left;
+}
+
+.button {
+  background: var(--primary-color-dark);
+  color: white;
+  padding: 20px;
+  border: 0;
+  font-size: 20px;
+  border-radius: 30px;
+}
+
+.button.small {
+  padding: 10px 20px;
+}
+
+.button:hover {
+  background: var(--primary-color);
+}
+
 @media (max-width: 949px) {
   section .right {
     grid-column: 1;
@@ -140,12 +165,17 @@ section .right {
   }
 
   section .right img {
-    width: 100%;
+    width: 50%;
     margin-left: 0;
     margin-top: 35px;
   }
 
   section {
     padding: 50px 0;
+  }
+
+  .action-bar {
+    margin: 40px 0 0;
+    text-align: center;
   }
 }

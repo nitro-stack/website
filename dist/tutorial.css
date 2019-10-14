@@ -1,3 +1,7 @@
+body {
+  --primary-color: #3E72BA;
+}
+
 .icon.outbound {
   color: #aaa;
   display: inline-block;
@@ -130,7 +134,7 @@ a {
 
 a,
 p a code {
-  color: #DF2F39;
+  color: var(--primary-color);
 }
 
 ol,
