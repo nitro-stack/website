@@ -94,7 +94,7 @@ section {
 section img {
   margin-left: 100px;
   animation: beat 1s infinite alternate;
-  width: 340px;
+  width: 500px;
 }
 
 section h1 {
@@ -102,7 +102,7 @@ section h1 {
   font-style: normal;
   font-size: 8vw;
   text-align: left;
-  color: rgba(0, 0, 0, 1);
+  color: var(--primary-color-dark);
 }
 
 @keyframes beat {

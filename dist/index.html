@@ -36,17 +36,13 @@
     </a>
   </header>
 
-  <section>
-    <div class="left">
-      <h1>
-        Supercharge. Build. Deploy.
-      </h1>
-    </div>
-    <div class="right">
-      <img src="nitro_logo.png" alt="nitro logo" />
-    </div>
+  <section class="page">
+    <h1>
+      Supercharge. Build and Deploy NodeJS on Azure.
+    </h1>
+    
     <div class="action-bar">
-      <a href="#get-started" aria-hidden="true" class="button">Get Started</a>
+      <a href="#Quickstart" aria-hidden="true" class="button">Quickstart</a>
     </div>
   </section>
   <main class="page">
@@ -71,24 +67,54 @@
           height: 100%;
         }
       </style>
-      <div class='embed-container'><iframe src='https://www.youtube.com/embed/W6qMP-qXCLI' frameborder='0' allowfullscreen></iframe></div>
+      <!-- <div class='embed-container'><iframe src='https://www.youtube.com/embed/W6qMP-qXCLI' frameborder='0' allowfullscreen></iframe></div> -->
 
+      <img src="nitro_logo.png" alt="nitro logo" />
 
       <h2 id="introduction"><a href="#introduction" aria-hidden="true" class="header-anchor">#</a>Introduction</h2>
 
-      <p>Nitro is a collection of tools, libraries and best practices for building and deploying
-        <strong>Serverless</strong>
-        backends for your application powered by NestJS and Azure.</p>
-      <ul>
-        <li>😍 Based on the NestJS Framework</li>
-        <li>🔋 Batteries Included [DB, FileUpload]</li>
-        <li>⚡️ Deploy as a Serverless app</li>
-        <li>📈 Automatic scaling</li>
-        <li>💰 Pay only for what you use</li>
-      </ul>
+      <p>
+          <strong>The simplest way to build and deploy Serverless NodeJS backends on Azure.</strong>
+      </p>
+      <br>
 
-      <h2 id="get-started"><a href="#get-started" aria-hidden="true" class="header-anchor">#</a>Get Started</h2>
+      <p>
+          Nitro is a heavily opinionated template for building applications in the NestJS Framework, the fastest-growing NodeJS framework in the world:
+      </p>
+      <p>
+        <ul>
+          <li><strong>Serverless</strong> Database support with Azure Table Storage.</li>
+          <li><strong>Serverless</strong> File Upload with Azure Blob Storage.</li>
+          <li><strong>Serverless</strong> Hosting with Azure Functions.</li>
+        </ul>
+      </p>
 
+      <h2>Benefits</h2>
+
+      <p>
+        <strong>TypeScript:</strong> Built natively in TypeScript a Nitro-Stack NestJS application gives you the confidence of Type safety with the productivity of JavaScript.
+      </p>
+      <br>
+      <p>
+        <strong>Effortlessly Scalable.</strong> Nitro applications are Serverless, they scale automatically and you only pay for what you use. From the website hosting, to file-upload to the database, all parts of a Nitro stack scale.
+      </p>
+      <br>
+      <p>
+        <strong>Large Ecosystem</strong>
+        A NestJS application sits on either express or fastify (you choose) with access to both platforms diverse ecosystem of modules and packages.
+      </p>
+      <br>
+      <p>
+        <strong>GraphQL and Rest</strong>
+        No need to choose upfront, a NestJS application allows you to expose entities as either a series of Rest endpoints or a single GraphQL endpoint.
+      </p>
+      <br>
+      <p>
+        <strong>❤ Azure</strong>
+        Your gateway to over 100 Azure cloud services.
+      </p>
+
+      <h2 id="Quickstart"><a href="#Quickstart" aria-hidden="true" class="header-anchor">#</a>Quickstart</h2>
 
       <p>
         To get started with the Nitro Stack, you need to install the following packages:
@@ -97,15 +123,38 @@
         <pre><code>npm install --global @manekinekko/hexa</code></pre>
       </p>
 
+      <p>
+        A Nitro application is just a NestJS application with Serverless support on Azure. So to begin create a NestJS application
+        <pre><code>
+nest new nitro-cats
+cd nitro-cats
+nest run start
+        </code></pre>
+      </p>
+
       <h2 id="serverless"><a href="#serverless" aria-hidden="true" class="header-anchor">#</a>Deploy as a Serverless app</h2>
 
       <p>
-          In order to deploy the NestJS application to Azure Function, add the <code>@nestjs/azure-func-http</code> schematic:
-          <pre><code>nest add @nestjs/azure-func-http</code></pre>
+          To deploy as a serverless application on Azure you first need to add the <code>nest add @nestjs/azure-func-http module</code>, this converts your NestJS application to a Serverless Azure Function.
+          <pre><code>
+nest add @nestjs/azure-func-http
+
+
+✔ Installation in progress... ☕
+CREATE /.funcignore (66 bytes)
+CREATE /host.json (23 bytes)
+CREATE /local.settings.json (116 bytes)
+CREATE /proxies.json (72 bytes)
+CREATE /main/function.json (294 bytes)
+CREATE /main/index.ts (287 bytes)
+CREATE /main/sample.dat (23 bytes)
+CREATE /src/main.azure.ts (321 bytes)
+UPDATE /package.json (1827 bytes)
+</code></pre>
         </p>
   
         <p>
-          Next, use the Hexa CLI to setup and configure an Azure Functions project:
+          We need to build a home for our application in the Cloud, to do that we use <a href="hexa.run">Hexa</a>. Hexa is a CLI tool to help you easily create and manage resources on the Azure platform:
           <pre><code>hexa init --just functions</code></pre>
         </p>
         
