@@ -1,5 +1,5 @@
 body {
-  --primary-color: #3E72BA;
+  --primary-color: #f6a52f;
 }
 
 .icon.outbound {
@@ -125,6 +125,8 @@ body {
 
 .theme-default-content:not(.custom) img {
   max-width: 100%;
+  margin: 0 auto;
+  display: block;
 }
 
 a {
