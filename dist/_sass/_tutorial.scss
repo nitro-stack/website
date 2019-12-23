@@ -1,0 +1,246 @@
+body {
+    --primary-color: #f6a52f;
+}
+
+.icon.outbound {
+    color: #aaa;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+}
+
+.page-edit,
+.page-nav {
+    max-width: 740px;
+    margin: 0 auto;
+    padding: 2rem 2.5rem;
+}
+
+.page {
+    padding-bottom: 2rem;
+    display: block;
+}
+
+.page-edit {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    overflow: auto;
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
+    color: #ccc;
+    background: none;
+    font-family: Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace;
+    font-size: 1em;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+    -moz-tab-size: 4;
+    tab-size: 4;
+    -webkit-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+}
+
+pre[class*="language-"] {
+    padding: 1em;
+    margin: 0.5em 0;
+    overflow: auto;
+}
+
+:not(pre)>code[class*="language-"],
+pre[class*="language-"] {
+    background: #2d2d2d;
+}
+
+.theme-default-content code {
+    color: #476582;
+    padding: 0.25rem 0.5rem;
+    margin: 0;
+    font-size: 0.85em;
+    background-color: rgba(27, 31, 35, 0.05);
+    border-radius: 3px;
+}
+
+.theme-default-content pre,
+.theme-default-content pre[class*="language-"] {
+    line-height: 1.4;
+    padding: 1.25rem 1.5rem;
+    margin: 0.85rem 0;
+    background-color: #282c34;
+    border-radius: 6px;
+    overflow: auto;
+}
+
+.theme-default-content pre[class*="language-"] code,
+.theme-default-content pre code {
+    color: #fff;
+    padding: 0;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+div[class*="language-"] {
+    position: relative;
+    background-color: #282c34;
+    border-radius: 6px;
+}
+
+div[class*="language-"] pre,
+div[class*="language-"] pre[class*="language-"] {
+    background: transparent;
+    position: relative;
+    z-index: 1;
+}
+
+.theme-default-content:not(.custom) {
+    max-width: 740px;
+    margin: 0 auto;
+    padding: 2rem 2.5rem;
+}
+
+body,
+html {
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+        Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 16px;
+    color: #000000;
+}
+
+.theme-default-content:not(.custom)> :first-child {
+    margin-top: 3.6rem;
+}
+
+.theme-default-content:not(.custom) img {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+a {
+    font-weight: 500;
+    text-decoration: none;
+}
+
+a,
+p a code {
+    color: var(--primary-color);
+}
+
+ol,
+ul {
+    padding-left: 1.2em;
+}
+
+strong {
+    font-weight: 600;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+    line-height: 1.25;
+}
+
+.theme-default-content:not(.custom)>h1,
+.theme-default-content:not(.custom)>h2,
+.theme-default-content:not(.custom)>h3,
+.theme-default-content:not(.custom)>h4,
+.theme-default-content:not(.custom)>h5,
+.theme-default-content:not(.custom)>h6 {
+    margin-top: -3.1rem;
+    padding-top: 4.6rem;
+    margin-bottom: 0;
+}
+
+.theme-default-content:not(.custom)>h1:first-child,
+.theme-default-content:not(.custom)>h2:first-child,
+.theme-default-content:not(.custom)>h3:first-child,
+.theme-default-content:not(.custom)>h4:first-child,
+.theme-default-content:not(.custom)>h5:first-child,
+.theme-default-content:not(.custom)>h6:first-child {
+    margin-top: -1.5rem;
+    margin-bottom: 1rem;
+}
+
+.theme-default-content:not(.custom)>h1:first-child+.custom-block,
+.theme-default-content:not(.custom)>h1:first-child+p,
+.theme-default-content:not(.custom)>h1:first-child+pre,
+.theme-default-content:not(.custom)>h2:first-child+.custom-block,
+.theme-default-content:not(.custom)>h2:first-child+p,
+.theme-default-content:not(.custom)>h2:first-child+pre,
+.theme-default-content:not(.custom)>h3:first-child+.custom-block,
+.theme-default-content:not(.custom)>h3:first-child+p,
+.theme-default-content:not(.custom)>h3:first-child+pre,
+.theme-default-content:not(.custom)>h4:first-child+.custom-block,
+.theme-default-content:not(.custom)>h4:first-child+p,
+.theme-default-content:not(.custom)>h4:first-child+pre,
+.theme-default-content:not(.custom)>h5:first-child+.custom-block,
+.theme-default-content:not(.custom)>h5:first-child+p,
+.theme-default-content:not(.custom)>h5:first-child+pre,
+.theme-default-content:not(.custom)>h6:first-child+.custom-block,
+.theme-default-content:not(.custom)>h6:first-child+p,
+.theme-default-content:not(.custom)>h6:first-child+pre {
+    margin-top: 2rem;
+}
+
+h1:hover .header-anchor,
+h2:hover .header-anchor,
+h3:hover .header-anchor,
+h4:hover .header-anchor,
+h5:hover .header-anchor,
+h6:hover .header-anchor {
+    opacity: 1;
+}
+
+h1 {
+    font-size: 2.2rem;
+}
+
+h2 {
+    font-size: 1.65rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid #eaecef;
+}
+
+h3 {
+    font-size: 1.35rem;
+}
+
+a.header-anchor {
+    font-size: 0.85em;
+    float: left;
+    margin-left: -0.87em;
+    padding-right: 0.23em;
+    margin-top: 0.125em;
+    opacity: 0;
+}
+
+.line-number,
+code,
+kbd {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, Courier New, monospace;
+}
+
+ol,
+p,
+ul {
+    line-height: 1.7;
+}
