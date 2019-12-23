@@ -1,0 +1,105 @@
+@charset "utf-8";
+@import '../node_modules/bulma/sass/utilities/initial-variables';
+// @import './tutorial';
+
+$family-primary: 'Open Sans',
+sans-serif;
+$widescreen: 960px+(2 * $gap);
+$desktop: 768px+(2 * $gap);
+$orange: #f6a52f;
+$brown: #6e4e43;
+$red: $orange;
+$primary: $orange;
+@import '../node_modules/bulma/bulma';
+
+body,
+strong {
+    color: $brown;
+}
+
+
+
+.content {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+        color: $brown;
+    }
+
+    max-width: 740px;
+    margin: 0 auto;
+}
+
+ul.benefits {
+    li {
+        padding-bottom: 1em;
+    }
+}
+
+a {
+    color: $orange;
+
+    &:hover {
+        color: $brown;
+    }
+}
+
+.highlighted {
+    background: $primary;
+    color: $white;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.floatingNitro {
+    position: absolute;
+    left: -30px;
+    top: 900px;
+    transform: rotate(90deg);
+
+    img {
+        transition: transform 0.3s ease-out;
+        width: 100px;
+    }
+
+    &:hover {
+        img {
+            transform: translateY(100px);
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .floatingNitro {
+        top: 1100px;
+    }
+}
+
+.hero-body {
+    .logo {
+        width: 120px;
+    }
+
+    .subtitle {
+        font-family: 'Jua';
+        margin: 64px 0;
+        line-height: 1.5;
+    }
+}
+
+.features {
+    p {
+        line-height: 2.5;
+    }
+
+    margin-bottom: 5rem;
+}
+
+.footer {
+    padding: 0;
+}

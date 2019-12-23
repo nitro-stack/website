@@ -3,200 +3,224 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Nitro 🚀</title>
-  <link rel="shortcut icon" href="/favicon.png" type="image/png" />
-  <link rel="icon" href="/favicon.png" type="image/png" />
+  <title>Nitro </title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
   <link rel="canonical" href="https://nitr.ooo/" />
-  <meta name="description" content="Introducing Nitro: Supercharge Your Web Applications with Serverless." />
+  <meta name="description" content="The simplest way to build & deploy Serverless Node.js backends on Azure" />
   <meta name="keywords" content="cloud,serverless,web,angular,nestjs" />
-
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://nitr.ooo/" />
   <meta property="og:title" content="Nitro Stack" />
   <meta property="og:image" content="https://nitr.ooo/nitro.png" />
-  <meta property="og:description" content="Introducing Nitro: Supercharge Your Web Applications with Serverless." />
+  <meta property="og:description" content="The simplest way to build & deploy Serverless Node.js backends on Azure" />
   <meta property="og:site_name" content="Nitro Stack" />
-  <meta name="twitter:description" content="Introducing Nitro: Supercharge Your Web Applications with Serverless." />
+  <meta name="twitter:description" content="The simplest way to build & deploy Serverless Node.js backends on Azure" />
   <meta name="twitter:image:src" content="https://nitr.ooo/nitro.png" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <link rel="stylesheet" type="text/css" href="index.css" />
-  <link rel="stylesheet" type="text/css" href="tutorial.css" />
-  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Jua|Open+Sans:400,700&display=swap" rel="stylesheet">
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150562523-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
     gtag('config', 'UA-150562523-1', {
-      'page_title' : 'homepage',
-      'page_path': '/index.html'  
+      'page_title': 'homepage',
+      'page_path': '/index.html'
     });
   </script>
 
 </head>
 
 <body>
-  <header>
-    <a href="index.html">
-        <img src="nitro.png" alt="nitro logo" />
-      <span>NITRO<i>alpha</i></span>
-    </a>
-    <a href="https://github.com/nitro-stack/website/" rel="noopener" title="Contribute">
-      <img src="github.png" alt="github logo">
-    </a>
-  </header>
+  <a href="https://github.com/nitro-stack" class="github-corner" aria-label="View source on GitHub"><svg width="80"
+      height="80" viewBox="0 0 250 250"
+      style="fill:#FB9200; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
+      <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+      <path
+        d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+        fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+      <path
+        d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+        fill="currentColor" class="octo-body"></path>
+    </svg></a>
+  <style>
+    .github-corner:hover .octo-arm {
+      animation: octocat-wave 560ms ease-in-out
+    }
 
-  <section class="page">
-    <h1>
-      Supercharge. Build and Deploy NodeJS on Azure.
-    </h1>
-    
-    <div class="action-bar">
-      <a href="#Quickstart" aria-hidden="true" class="button">Quickstart</a>
-      <!-- <a href="https://aka.ms/nitro-ws" aria-hidden="true" class="button">Register for the remote Workshop</a> -->
+    @keyframes octocat-wave {
+
+      0%,
+      100% {
+        transform: rotate(0)
+      }
+
+      20%,
+      60% {
+        transform: rotate(-25deg)
+      }
+
+      40%,
+      80% {
+        transform: rotate(10deg)
+      }
+    }
+
+    @media (max-width:500px) {
+      .github-corner:hover .octo-arm {
+        animation: none
+      }
+
+      .github-corner .octo-arm {
+        animation: octocat-wave 560ms ease-in-out
+      }
+    }
+  </style>
+  <div class="floatingNitro">
+    <img src="./nitro-logo.svg" alt="Floating Nitro">
+  </div>
+  <section class="hero is-medium has-text-centered">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-8-desktop is-offset-2-desktop">
+            <img class="logo" src="./nitro-logo.svg" alt="Nitro Logo">
+            <h2 class="subtitle is-4">
+              The simplest way to build & deploy <br>
+              <span class="highlighted">Serverless</span> Node.js <br>
+              backends on Azure
+            </h2>
+            <p><strong>Nitro</strong> is a heavily opinionated template for building Serverless applications with<br>
+              <a href="https://nestjs.com/"><strong>NestJS</strong></a>, the fastest-growing
+              <strong>NodeJS</strong> framework in the world by github stars.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
-  <main class="page">
-    <div class="theme-default-content content__default">
-
-      <style>
-        .embed-container {
-          position: relative;
-          padding-bottom: 56.25%;
-          height: 0;
-          overflow: hidden;
-          max-width: 100%;
-        }
-
-        .embed-container iframe,
-        .embed-container object,
-        .embed-container embed {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-        }
-      </style>
-      <!-- <div class='embed-container'><iframe src='https://www.youtube.com/embed/W6qMP-qXCLI' frameborder='0' allowfullscreen></iframe></div> -->
-
-      <img src="nitro.png" alt="nitro logo" />
-
-      <h2 id="introduction"><a href="#introduction" aria-hidden="true" class="header-anchor">#</a>Introduction</h2>
-
-      <p>
-          <strong>The simplest way to build and deploy Serverless NodeJS backends on Azure.</strong>
-      </p>
-      <br>
-
-      <p>
-          Nitro is a heavily opinionated template for building applications in the NestJS Framework, the fastest-growing NodeJS framework in the world:
-      </p>
-      <p>
-        <ul>
-          <li><strong>Serverless</strong> Database support with Azure Table Storage.</li>
-          <li><strong>Serverless</strong> File Upload with Azure Blob Storage.</li>
-          <li><strong>Serverless</strong> Hosting with Azure Functions.</li>
-        </ul>
-      </p>
-
-      <h2>Benefits</h2>
-
-      <p>
-        <strong>TypeScript:</strong> Built natively in TypeScript a Nitro-Stack NestJS application gives you the confidence of Type safety with the productivity of JavaScript.
-      </p>
-      <br>
-      <p>
-        <strong>Effortlessly Scalable.</strong> Nitro applications are Serverless, they scale automatically and you only pay for what you use. From the website hosting, to file-upload to the database, all parts of a Nitro stack scale.
-      </p>
-      <br>
-      <p>
-        <strong>Large Ecosystem</strong>
-        A NestJS application sits on either express or fastify (you choose) with access to both platforms diverse ecosystem of modules and packages.
-      </p>
-      <br>
-      <p>
-        <strong>GraphQL and Rest</strong>
-        No need to choose upfront, a NestJS application allows you to expose entities as either a series of Rest endpoints or a single GraphQL endpoint.
-      </p>
-      <br>
-      <p>
-        <strong>❤ Azure</strong>
-        Your gateway to over 100 Azure cloud services.
-      </p>
-
-      <h2 id="Quickstart"><a href="#Quickstart" aria-hidden="true" class="header-anchor">#</a>Quickstart</h2>
-
-      <p>
-        To get started with the Nitro Stack, you need to install the following packages:
-        <pre><code>npm install --global @nestjs/cli</code></pre>
-        And the Hexa CLI (<a href="https://hexa.run">read more about Hexa</a>):
-        <pre><code>npm install --global @manekinekko/hexa</code></pre>
-      </p>
-
-      <p>
-        A Nitro application is just a NestJS application with Serverless support on Azure. So to begin create a NestJS application
-        <pre><code>
-nest new nitro-cats
-cd nitro-cats
-nest run start
-        </code></pre>
-      </p>
-
-      <h2 id="serverless"><a href="#serverless" aria-hidden="true" class="header-anchor">#</a>Deploy as a Serverless app</h2>
-
-      <p>
-          To deploy as a serverless application on Azure you first need to add the <code>nest add @nestjs/azure-func-http module</code>, this converts your NestJS application to a Serverless Azure Function.
-          <pre><code>
-nest add @nestjs/azure-func-http
-
-
-✔ Installation in progress... ☕
-CREATE /.funcignore (66 bytes)
-CREATE /host.json (23 bytes)
-CREATE /local.settings.json (116 bytes)
-CREATE /proxies.json (72 bytes)
-CREATE /main/function.json (294 bytes)
-CREATE /main/index.ts (287 bytes)
-CREATE /main/sample.dat (23 bytes)
-CREATE /src/main.azure.ts (321 bytes)
-UPDATE /package.json (1827 bytes)
-</code></pre>
-        </p>
-  
-        <p>
-          We need to build a home for our application in the Cloud, to do that we use <a href="hexa.run">Hexa</a>. Hexa is a CLI tool to help you easily create and manage resources on the Azure platform:
-          <pre><code>hexa init --just functions</code></pre>
-        </p>
-        
-        <p>
-          Finally, watch Hexa deploy your Nest application to Azure Functions!
-          <pre><code>hexa deploy</code></pre>
-        </p>
-  
-      <h2 id="links"><a href="#links" aria-hidden="true" class="header-anchor">#</a>Links</h2>
-
-      <ul>
-        <li><a href="https://trilon.io/blog/deploy-nestjs-azure-functions">How to deploy a NestJS application on Azure
-            Serverless Functions?</a></li>
-        <li><a href="https://trilon.io/blog/nestjs-nosql-azure-table-storage">How to add Azure Serverless NoSQL Database
-            support to NestJS?</a></li>
-        <li>View the Nitro-Cats Demo project on <a href="https://github.com/nitro-stack/nitro-cats">GitHub</a></a></li>
-      </ul>
-
-      <div class="action-bar">
-          <a href="https://github.com/nitro-stack/" aria-hidden="true" class="button small">Contribute</a>
-          <!-- <a href="https://aka.ms/nitro-ws" aria-hidden="true" class="button small">Register for the remote Workshop</a> -->
+  <section class="section features">
+    <div class="container">
+      <div class="columns">
+        <div class="column has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-bold is-marginless">Serverless</h2>
+          <p><span class="highlighted">Database support</span><br> with <a
+              href="https://github.com/nestjs/azure-database" target="_blank">Azure Table Storage</a>.</p>
+        </div>
+        <div class="column has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-bold is-marginless">Serverless</h2>
+          <p><span class="highlighted">File Upload</span><br>with <a href="https://github.com/nestjs/azure-storage"
+              target="_blank">Azure Blob Storage</a>.</p>
+        </div>
+        <div class="column has-text-centered">
+          <h2 class="subtitle is-4 has-text-weight-bold is-marginless">Serverless</h2>
+          <p><span class="highlighted">Hosting</span><br> with <a href="https://github.com/nestjs/azure-func-http"
+              target="_blank">Azure Functions</a>.</p>
+        </div>
       </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
 
-    </main>
-    <footer>
-      <span>Built with ❤ by the Nitro Stack team</span>
-      <nav>
-        <a href="notice.html">Non-Affiliation Notice</a>
-      </nav>
-    </footer>
+      <div class="content theme-default-content">
+        <h3>Benefits</h3>
+        <ul class="benefits">
+          <li>
+            <h4>TypeScript</h4>
+            <p>Built natively in TypeScript a Nitro-Stack NestJS application gives you the confidence of Type safety
+              with the productivity of JavaScript.</p>
+          </li>
+          <li>
+            <h4>Effortlessly Scalable</h4>
+            <p>Nitro applications are Serverless, they scale automatically and you only pay for what you use. From
+              the application hosting, to file-upload to the database support, all parts of a Nitro stack auto-scale.
+            </p>
+          </li>
+          <li>
+            <h4>Large Ecosystem</h4>
+            <p>A NestJS application sits on either express or fastify (you choose) with access to both platforms diverse
+              ecosystem of modules and packages</p>
+          </li>
+          <li>
+            <h4>GraphQL and Rest</h4>
+            <p>No need to choose upfront, a NestJS application allows you to expose entities as either a series of
+              Rest endpoints or a single GraphQL endpoint.</p>
+          </li>
+          <li>
+            <h4><span class="has-text-primary">❤</span> Azure</h4>
+            <p>Your gateway to over 100 Azure cloud services.</p>
+          </li>
+        </ul>
+          <h3>Quickstart</h3>
+          <p>
+            A Nitro application is just a NestJS application with Serverless support on Azure. So to begin create a
+            NestJS application
+          </p>
+          <pre><code>npm i -g @nestjs/cli</code><br><code>nest new nitro-cats</code><br><code>cd nitro-cats</code><br><code>nest run start</code></pre>
+          <p>
+            To deploy as a serverless application on Azure you first need to add the
+            <code>nest add @nestjs/azure-func-http</code> module, this converts your NestJS application to a
+            Serverless Azure Function.
+          </p>
+          <pre><code>npm i -g @nestjs/cli</code><br><code>nest new nitro-cats</code><br><code>cd nitro-cats</code><br><code>nest run start</code></pre>
+          <p>We need to build a home for our application in the Cloud, to do that we use Hexa. Hexa is a CLI tool to
+            help you easily create and manage resources on the Azure platform.</p>
+          <pre><code>npm install --global @manekinekko/hexa</code></pre>
+          <p>You will need an account on the Azure platform, you can get one for free <here>. Once you’ve created one
+              then login with Hexa like so:</p>
+          <pre><code>hexa login</code></pre>
+          <p>Then create our home <span class="has-text-primary">❤</span> in the cloud.</p>
+          <pre><code>hexa init --just=functions</code></pre>
+          <p>Finally deploy our application to the cloud!</p>
+          <pre><code>hexa deploy</code></pre>
+        <h3>More Info</h3>
+        <ul>
+          <li>
+            <a target="_blank"
+              href="https://dev.to/azure/build-your-first-serverless-app-with-angular-nestjs-and-azure-108h">Build your
+              first serverless app with Angular, NestJS and Azure</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://trilon.io/blog/deploy-nestjs-azure-functions">How to deploy a NestJS
+              application on Azure Serverless Functions?</a> 
+          </li>
+          <li>
+            <a target="_blank" href="https://trilon.io/blog/nestjs-nosql-azure-table-storage">Introducing NoSQL Azure Table Storage for NestJS</a> 
+          </li>          
+          <li>
+            <a target="_blank" href="https://github.com/nitro-stack/nitro-cats">View the Nitro-Cats Demo project on GitHub</a> 
+          </li>                    
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container has-text-centered">
+      <img width="320px" src="./nitro-logo-full.png" alt="">
+    </div>
+  </section>
+  <footer class="footer has-text-centered">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-8-desktop is-offset-2-desktop">
+          <p>Built with <span class="has-text-primary">❤</span> by the <a
+              href="https://github.com/orgs/nitro-stack/people" target="_blank">Nitro Stack team</a></p>
+          <p>Nitro is not affiliated with Microsoft (<a
+              href="https://github.com/nitro-stack/website/blob/master/AFFIALITATION_NOTICE.md" target="_blank">read
+              more</a>)</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="lib/main.js"></script>
 </body>
 
 </html>
